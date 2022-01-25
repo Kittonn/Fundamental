@@ -3,8 +3,9 @@
 Module | Learn
 ----- | :-----:
 Numpy | 🔜
-Pandas | ❌
-Matplotlib | ❌
+Pandas | 🔜
+Matplotlib | 🔜
+Streamlit | ❌
 
 ### PDF
 * [Numpy](https://numpy.org/doc/stable/numpy-user.pdf)
