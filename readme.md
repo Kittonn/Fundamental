@@ -5,6 +5,9 @@ Module | Learn
 Numpy | 🔜
 Pandas | 🔜
 Matplotlib | 🔜
+SciPy | ❌
+Scikit-Learn | ❌
+TensorFlow | ❌
 Streamlit | ❌
 
 ### PDF
