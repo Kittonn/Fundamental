@@ -1,18 +1,14 @@
-# 📉DATA SCIENCE 
+<h1>Fundamental 🗂️</h1>
 
-Module | Learn
------ | :-----:
-Numpy | 🔜
-Pandas | 🔜
-Matplotlib | 🔜
-SciPy | ❌
-Scikit-Learn | ❌
-TensorFlow | ❌
-Streamlit | ❌
+<p align="center">
+<i>Preparing for computer engineering<br>at King Mongkut's Institute of Technology Ladkrabang.</i>
+</p>
 
-### PDF
-* [Numpy](https://numpy.org/doc/stable/numpy-user.pdf)
-* [Pandas](https://pandas.pydata.org/docs/pandas.pdf)
+<h2>Learn 🛠️</h2>
 
-
-`© Lambangchang Kittipod.`
+Language | Learn
+----- | -----
+<img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"> | ✅
+<img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"> | ❌
+<img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=white"> | ❌
+<img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white"> | ❌
