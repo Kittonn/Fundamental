@@ -1,7 +1,7 @@
 <h1>Fundamental 🗂️</h1>
 
 <p align="center">
-<i>Preparing for computer engineering<br>at King Mongkut's Institute of Technology Ladkrabang.</i>
+<i>Preparing for computer engineering.</i>
 </p>
 
 <h2>Learn 🛠️</h2>
