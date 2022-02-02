@@ -7,8 +7,7 @@
 <h2>Learn 🛠️</h2>
 
 - [x] C
-- [ ] C++
-- [ ] Python
+- [x] C++
 - [ ] Object Oriented Programming
 - [ ] Algorithms and Data Structures
 - [ ] Dynamic Programming
