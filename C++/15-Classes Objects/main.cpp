@@ -3,28 +3,43 @@
 using namespace std;
 
 class Book {
+    private:
+        int pages;
     public:
         string title;
         string author;
-        int pages;
-    
+        
+        Book(string atitle, string aauthor, int apages){
+           title = atitle;
+           author = aauthor;
+           setPage(apages);
+        }
+
+        void setPage(int apages) {
+            if (apages <= 100 || apages >= 100) {
+                pages = apages;
+            } else {
+                pages = -1;
+            }
+        }
+
+        int getPage(){
+            return pages;
+        }
+
+        bool hasPage(){
+            if (pages >= 100) {
+                return true;
+            } 
+            return false;
+        }
+
+        
 };
 
 int main() {
     
-    Book book1;
-    book1.title = "Harry Potter";
-    book1.author = "JK Rowling";
-    book1.pages = 500;
-
-    Book book2;
-    book2.title = "Lord of the Rings";
-    book2.author = "Tolkein";
-    book2.pages = 700;
-
-    cout << book2.title << endl;
-    cout << book2.author << endl;
-    cout << book2.pages << endl;
+    Book book1("Harry","JK",0);
 
     return 0;
 }
