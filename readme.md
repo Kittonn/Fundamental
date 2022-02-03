@@ -11,4 +11,7 @@
 - [ ] Object Oriented Programming
 - [ ] Algorithms and Data Structures
 - [ ] Dynamic Programming
+- [ ] Arduino
+- [ ] Java
+- [ ] sfml
 
