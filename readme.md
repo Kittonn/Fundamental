@@ -8,7 +8,7 @@
 
 - [x] C
 - [x] C++
-- [ ] Object Oriented Programming
+- [x] Object Oriented Programming
 - [ ] Algorithms and Data Structures
 - [ ] Dynamic Programming
 - [ ] Arduino
