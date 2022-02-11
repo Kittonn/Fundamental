@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Prompt', sans-serif;
+}
+
+.coding-pic {
+    width: 500px;
+    border-radius: 10px;
+}
