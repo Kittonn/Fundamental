@@ -1,9 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
-
-
 body {
-    --bg-color: gray;
+    margin: 0;
+}
+
+.container {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: prompt;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px 30px; /* row, column */
+}
+
+.d1 {
+    background-color: brown;
+}
+
+.d2 {
+    background-color: aquamarine;
+}
+
+.d3 {
+    background-color: blue;
+}
+
+.d4 {
+    background-color: blueviolet;
+}
+
+.d5 {
+    background-color: purple;
+}
+
+/*body {
+    --bg-color: wheat;
     background-color: var(--bg-color);
     margin: 0;
 }
@@ -39,3 +72,9 @@ p {
     background-color: white;
     color: black;
 }
+
+@media (max-width: 500px) {
+    body {
+        background-color: white;
+    }
+} */
