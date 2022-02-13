@@ -9,9 +9,10 @@
 - [x] C
 - [x] C++
 - [x] Object Oriented Programming
+- [x] Html
+- [x] Css
 - [ ] Algorithms and Data Structures
 - [ ] Dynamic Programming
 - [ ] Arduino
 - [ ] Java
 - [ ] sfml
-
