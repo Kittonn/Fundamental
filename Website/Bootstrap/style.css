@@ -4,3 +4,8 @@
     border: 2px solid white;
     color: white;
 }
+
+.child {
+    background-color: beige;
+    color: black;
+}
