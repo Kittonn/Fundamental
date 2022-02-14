@@ -1,4 +1,4 @@
-[class*="col"] {
+/*[class*="col"] {
     padding: 1rem;
     background-color: brown;
     border: 2px solid white;
@@ -8,4 +8,4 @@
 .child {
     background-color: beige;
     color: black;
-}
+} */
