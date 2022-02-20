@@ -1,17 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./index.css";
 
 const BookList = () => {
   return (
-    <div>
+    <section className="booklist">
       <Book />
-    </div>
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 };
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
@@ -28,8 +34,8 @@ const Image = () => {
   );
 };
 
-const Title = () => <h3>I Love You to the Moon and Back</h3>;
+const Title = () => <h3 className="title">I Love You to the Moon and Back</h3>;
 
-const Author = () => <p>Amelia Hepworth</p>;
+const Author = () => <p className="author">Amelia Hepworth</p>;
 
 ReactDOM.render(<BookList />, document.getElementById("root"));
