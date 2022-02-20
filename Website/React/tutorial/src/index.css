@@ -24,12 +24,23 @@ body {
     }
 }
 
-.book{
+.book {
     background-color: #fff;
     border-radius: 1rem;
-    padding: 1rem 2rem;
+    padding: 2rem;
 }
 
-.book h3 {
+.book img {
+    display: block;
+    margin: 0 auto;
+}
+
+.title {
     margin-top: 0.5rem;
+}
+
+.author {
+    color: #617d98;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
 }

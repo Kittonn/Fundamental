@@ -2,40 +2,29 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+const data = {
+  img: "https://images-na.ssl-images-amazon.com/images/I/71aLultW5EL._AC_UL200_SR200,200_.jpg",
+  title: "Our Class is a Family",
+  author: "Shannon Olsen",
+};
+
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
-      <Book />
+      <Book img={data.img} title={data.title} author={data.author} />
+      <Book/>
     </section>
   );
 };
 
-const Book = () => {
+const Book = (props) => {
   return (
     <article className="book">
-      <Image />
-      <Title />
-      <Author />
+      <img src={props.img} alt="" />
+      <h3 className="title">{props.title}</h3>
+      <p className="author">{props.author}</p>
     </article>
   );
 };
-
-const Image = () => {
-  return (
-    <img
-      src="https://images-na.ssl-images-amazon.com/images/I/81eB%2B7%2BCkUL._AC_UL200_SR200,200_.jpg"
-      alt=""
-    />
-  );
-};
-
-const Title = () => <h3 className="title">I Love You to the Moon and Back</h3>;
-
-const Author = () => <p className="author">Amelia Hepworth</p>;
 
 ReactDOM.render(<BookList />, document.getElementById("root"));
