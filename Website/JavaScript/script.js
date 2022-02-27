@@ -9,7 +9,7 @@ const data = [
         author: "author2",
         title: "title2"
     },
-    {
+{
         img: "img3",
         author: "author3",
         title: "title3"
