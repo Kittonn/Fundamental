@@ -20,13 +20,11 @@ const data = [
   },
 ];
 
-const name = ["Ton", "Kittipod", "Lambangchang"];
-const newName = name.map((name) => {
-  return <h1>{name}</h1>;
-});
 
 const BookList = () => {
-  return <section className="booklist">{newName}</section>;
+  return <section className="booklist">{data.map((book)=> {
+    return <Book {...book}/>
+  })}</section>;
 };
 
 const Book = ({ img, title, author }) => {
