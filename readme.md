@@ -10,9 +10,15 @@
 - [x] C++
 - [x] Object Oriented Programming
 - [x] Html
+- [x] Python
 - [x] Css
+- [x] Bootstrap
+- [x] Tailwind Css
+- [ ] JavaScript
+- [ ] TypeScript
+- [ ] React Js
+- [ ] Next Js
 - [ ] Algorithms and Data Structures
 - [ ] Dynamic Programming
 - [ ] Arduino
 - [ ] Java
-- [ ] sfml
