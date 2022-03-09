@@ -1,20 +1,10 @@
-import React, { useState } from "react";
-
+import React from "react";
+import Array from "./Components/UseState/Array";
 const App = () => {
-  const [text, setText] = useState("Hello");
-  const clickHandler = () => {
-    if (text === "Hello") {
-      setText("World");
-    } else {
-      setText("Hello");
-    }
-  };
+  
   return (
     <div>
-      <h2>{text}</h2>
-      <button type="button" onClick={clickHandler}>
-        Change
-      </button>
+      <Array />
     </div>
   );
 };
