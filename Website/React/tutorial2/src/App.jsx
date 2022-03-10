@@ -1,9 +1,10 @@
 import React from "react";
-import Card from "./Projects/Birthday/Card";
+
+import CleanUp from "./Components/UseEffect/CleanUp";
 const App = () => {
   return (
     <div>
-      <Card />
+      <CleanUp />
     </div>
   );
 };
