@@ -1,12 +1,8 @@
 import React from "react";
-import Array from "./Components/UseState/Array";
+import Counter from "./Components/UseState/Counter";
 const App = () => {
   
-  return (
-    <div>
-      <Array />
-    </div>
-  );
+  return <div><Counter /></div>;
 };
 
 export default App;

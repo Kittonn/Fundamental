@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 const Home = () => {
   return (
-    <div>
+    <div >
       <App />
     </div>
   );
