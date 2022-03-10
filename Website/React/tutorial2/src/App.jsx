@@ -1,12 +1,8 @@
 import React from "react";
+import Data from "./Components/UseEffect/Data";
 
-import CleanUp from "./Components/UseEffect/CleanUp";
 const App = () => {
-  return (
-    <div>
-      <CleanUp />
-    </div>
-  );
+  return <div><Data /></div>;
 };
 
 export default App;
