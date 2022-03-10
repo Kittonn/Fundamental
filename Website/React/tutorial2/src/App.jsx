@@ -1,8 +1,11 @@
 import React from "react";
-import Counter from "./Components/UseState/Counter";
+import Card from "./Projects/Birthday/Card";
 const App = () => {
-  
-  return <div><Counter /></div>;
+  return (
+    <div>
+      <Card />
+    </div>
+  );
 };
 
 export default App;
