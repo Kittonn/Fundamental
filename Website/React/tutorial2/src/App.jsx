@@ -1,8 +1,8 @@
 import React from "react";
-import Data from "./Components/UseEffect/Data";
+import ShowHide from "./Components/Conditional-rendering/ShowHide";
 
 const App = () => {
-  return <div><Data /></div>;
+  return <div><ShowHide /></div>;
 };
 
 export default App;
