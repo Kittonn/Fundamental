@@ -1,10 +1,10 @@
 import React from "react";
-import UseRef from "./Components/useRef/UseRef";
+import Basic from "./Components/useReducer/Basic";
 
 const App = () => {
   return (
     <div>
-      <UseRef />
+      <Basic />
     </div>
   );
 };
