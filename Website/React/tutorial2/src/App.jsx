@@ -1,10 +1,10 @@
 import React from "react";
-import Drill from "./Components/Prop-Drilling/Drill";
+import ContextApi from "./Components/UseContext/ContextApi";
 
 const App = () => {
   return (
     <div>
-      <Drill />
+      <ContextApi />
     </div>
   );
 };
