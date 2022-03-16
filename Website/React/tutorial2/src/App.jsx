@@ -1,8 +1,12 @@
 import React from "react";
-import ShowHide from "./Components/Conditional-rendering/ShowHide";
+import MultipleForm from "./Components/Form/MultipleForm";
 
 const App = () => {
-  return <div><ShowHide /></div>;
+  return (
+    <div>
+      <MultipleForm />
+    </div>
+  );
 };
 
 export default App;
