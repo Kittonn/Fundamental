@@ -1,10 +1,10 @@
 import React from "react";
-import Basic from "./Components/useReducer/Basic";
+import Drill from "./Components/Prop-Drilling/Drill";
 
 const App = () => {
   return (
     <div>
-      <Basic />
+      <Drill />
     </div>
   );
 };
