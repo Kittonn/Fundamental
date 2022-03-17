@@ -1,23 +1,21 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { data } from "../../Data";
 
-const List = ({ people, removePerson }) => {
+const PersonContext = React.createContext();
+
+const List = () => {
+  const { people } = useContext(PersonContext);
   return (
     <div>
       {people.map((person) => {
-        return (
-          <SinglePerson
-            key={person.id}
-            {...person}
-            removePerson={removePerson}
-          />
-        );
+        return <SinglePerson key={person.id} {...person} />;
       })}
     </div>
   );
 };
 
-const SinglePerson = ({ removePerson, id, name }) => {
+const SinglePerson = ({ id, name }) => {
+  const { removePerson } = useContext(PersonContext);
   return (
     <div>
       <h1>{name}</h1>
@@ -33,11 +31,9 @@ const ContextApi = () => {
     setPeople(newPeople);
   };
   return (
-    <div>
-      <div>
-        <List people={people} removePerson={removePerson} />
-      </div>
-    </div>
+    <PersonContext.Provider value={{ removePerson, people }}>
+      <List />
+    </PersonContext.Provider>
   );
 };
 
