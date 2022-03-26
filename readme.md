@@ -14,9 +14,11 @@
 - [x] Css
 - [x] Bootstrap
 - [x] Tailwind Css
-- [ ] JavaScript
-- [ ] TypeScript
-- [ ] React Js
+- [x] JavaScript
+- [x] TypeScript
+- [x] React Js
+- [x] Node Js
+- [x] Express Js
 - [ ] Next Js
 - [ ] Algorithms and Data Structures
 - [ ] Dynamic Programming
