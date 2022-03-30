@@ -1,10 +1,9 @@
 import React from "react";
-import Basic from "./Components/useContext/Basic";
-
+import CleanUp from "./Components/useEffect/CleanUp";
 const App = () => {
   return (
     <div>
-      <Basic />
+      <CleanUp />
     </div>
   );
 };
