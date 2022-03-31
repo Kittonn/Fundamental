@@ -1,9 +1,9 @@
 import React from "react";
-import Basic from "./Components/useReducer/Basic";
+import BasicObj from "./Components/useReducer/BasicObj";
 const App = () => {
   return (
     <div>
-      <Basic />
+      <BasicObj />
     </div>
   );
 };
