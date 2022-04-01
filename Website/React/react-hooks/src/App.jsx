@@ -1,9 +1,9 @@
 import React from "react";
-import BasicObj from "./Components/useReducer/BasicObj";
+import Counter from "./Components/Counter";
 const App = () => {
   return (
     <div>
-      <BasicObj />
+      <Counter />
     </div>
   );
 };
