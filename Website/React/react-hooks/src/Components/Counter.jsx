@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
+import { actions } from "../Store/index";
 const Counter = () => {
   const counter = useSelector((state) => state.counter);
   const dispatch = useDispatch();
@@ -7,11 +8,8 @@ const Counter = () => {
     <div>
       <h1>Counter App</h1>
       <p>{counter}</p>
-      <button onClick={() => dispatch({ type: "INC" })}>Increment</button>
-      <button onClick={() => dispatch({ type: "DEC" })}>decrement</button>
-      <button onClick={() => dispatch({ type: "ADD_10", payload: 10 })}>
-        Add 10
-      </button>
+      <button onClick={() => dispatch(actions.increment())}>Increment</button>
+      <button onClick={() => dispatch(actions.decrement())}>Decrement</button>
     </div>
   );
 };
