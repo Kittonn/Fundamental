@@ -1,20 +1,31 @@
 <script>
-  let date = 8;
-  export let name;
+  import Loop from "./Loop.svelte";
+  // let date = 8;
+  // let color = "orange";
+  // let name = "Kittipod";
+  // let lastname = "lambangchang";
 
-  const handleClick = () => {
-    date = 19;
-  };
+  // $: FullName = `${name} ${lastname}`;
+
+  // const handleClick = () => {
+  //   color = "red";
+  // };
+
+  // const handleInput = (e) => {
+  //   color = e.target.value;
+  // };
 </script>
 
 <div>
-  <div>Hello {date} {name}</div>
-  <button on:click={handleClick}>Change</button>
+  <Loop />
+  <!-- <div>Hello {FullName} {color}</div> -->
+  <!-- <button on:click={handleClick}>Change</button> -->
+
+  <!-- <input type="text" on:input={handleInput} value={color} /> -->
+  <!-- <input type="text" bind:value={name} />
+  <input type="text" bind:value={lastname} />
+  <input type="text" bind:value={color} /> -->
 </div>
 
 <style>
-  div {
-    color: aquamarine;
-    background-color: black;
-  }
 </style>
