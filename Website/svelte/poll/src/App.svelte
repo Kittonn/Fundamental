@@ -9,40 +9,21 @@
   const changeActive = (e) => {
     activeItem = e.detail;
   };
-  let polls = [
-    {
-      id: 1,
-      question: "Python or JavaScript?",
-      answerA: "Python",
-      answerB: "JavaScript",
-      votesA: 9,
-      votesB: 12,
-    },
-  ];
 
   const handleAdd = (e) => {
-    let poll = e.detail;
-    polls = [poll, ...polls];
+    activeItem = "Current Polls";
   };
 
-  const handleVote = (e) => {
-    const { id, option } = e.detail;
-    let copyPolls = [...polls];
-    let upvotePoll = copyPolls.find((poll) => poll.id == id);
-    if (option === "a") {
-      upvotePoll.votesA++;
-    } else {
-      upvotePoll.votesB++;
-    }
-    polls = copyPolls;
-  };
+  // const handleVote = (e) => {
+
+  // };
 </script>
 
 <Header />
 <main>
   <Taps {items} {activeItem} on:changeActiveItem={changeActive} />
   {#if activeItem === "Current Polls"}
-    <PollList {polls} on:vote={handleVote} />
+    <PollList />
   {:else}
     <CreatePollForm on:add={handleAdd} />
   {/if}
