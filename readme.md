@@ -19,8 +19,5 @@
 - [x] React Js
 - [x] Node Js
 - [x] Express Js
-- [ ] Next Js
-- [ ] Algorithms and Data Structures
-- [ ] Dynamic Programming
-- [ ] Arduino
-- [ ] Java
+- [x] Svelte
+- [x] Svelte Kit
