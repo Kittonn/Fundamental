@@ -17,7 +17,7 @@
 * [Game Development](/Game%20Development/)
   * [SFML](/Game%20Development/sfml_tutorial/)
 * [Data Science](/Data%20Science/)
-  * [Numpy](/Data%20Science/Numpy/)
+    * [Numpy](/Data%20Science/Numpy/)
     * [Pandas](/Data%20Science/Pandas/)
     * [Matplotlib](/Data%20Science/Matplotlib/)
     * [Scipy](/Data%20Science/SciPy/)
