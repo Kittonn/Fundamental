@@ -3,14 +3,13 @@ const app = express();
 const tasks = require("./routes/tasks");
 const connectDB = require("./db/connect");
 require("dotenv").config();
+const notFound = require("./middleware/not-found");
+
 // middleware
+app.use(express.static("./public"));
 app.use(express.json());
-
-app.get("/hello", (req, res) => {
-  res.send("Hello World Isus");
-});
-
 app.use("/api/v1/tasks", tasks);
+app.use(notFound);
 
 // app.get('/api/v1/tasks') --> get all tasks
 // app.post('api/v1/tasks') ---> post new tasks
