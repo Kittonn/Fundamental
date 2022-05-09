@@ -23,7 +23,7 @@ function App() {
                   </div>
                 </div>
                 <div className="hero-content-line">
-                  <div className="hero-content-line-inner">by behavior.</div>
+                  <div className="hero-content-line-inner">by behaviors.</div>
                 </div>
               </h1>
               <p>
