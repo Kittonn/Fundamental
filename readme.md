@@ -14,6 +14,7 @@
   * [Nodejs](//Web%20Development/NodeJs/)
   * [React](/Web%20Development/React/)
   * [Svelte](/Web%20Development/svelte/)
+  * [GSAP](/Web%20Development/Gsap/)
 * [Game Development](/Game%20Development/)
   * [SFML](/Game%20Development/sfml_tutorial/)
 * [Data Science](/Data%20Science/)
