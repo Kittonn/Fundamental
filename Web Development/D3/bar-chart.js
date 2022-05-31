@@ -1,7 +1,9 @@
-let width = 500;
-let height = 200;
+let dataset = [
+  5, 10, 13, 19, 21, 25, 22, 18, 15, 13, 11, 12, 15, 20, 18, 17, 16, 18, 23, 25,
+];
 
-let arr = [10, 15, 20, 25, 30];
+let width = 600;
+let height = 250;
 
 let svg = d3
   .select("body")
@@ -11,21 +13,21 @@ let svg = d3
 
 svg
   .selectAll("rect")
-  .data(arr)
+  .data(dataset)
   .enter()
   .append("rect")
-  .attr("width", 30)
-  .attr("fill", (d, i) => `rgb(${d * i - 2},${i * 10},${i * d})`)
-  .attr("height", (d) => d * 5)
-  .attr("x", (d, i) => i * 40)
-  .attr("y", (d) => height - d * 5);
+  .attr("width", 25)
+  .attr("height", (d) => d * 7)
+  .attr("x", (d, i) => i * 27)
+  .attr("y", (d, i) => height - d * 7)
+  .attr("fill",d=>`rgb(0,0,${Math.round(d*10)})`);
 
 svg
   .selectAll("text")
-  .data(arr)
+  .data(dataset)
   .enter()
   .append("text")
   .text((d) => d)
-  .attr("y", (d) => height - d * 5 +20)
-  .attr("x", (d, i) => i * 40+6)
-  .attr('fill','white')
+  .attr("x",  (d,i) => i * 27+3)
+  .attr("y", (d) => height - d * 7 + 15)
+  .attr("fill", "white");
