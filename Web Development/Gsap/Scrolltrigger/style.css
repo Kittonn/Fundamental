@@ -6,7 +6,19 @@
     padding: 0;
 }
 
-.div1,.div2 {
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+.panel {
+    height: 100vh;
+    background-color: pink;
+}
+.box-red {
+    background-color: red;
+}
+/* .div1,.div2 {
     height: 100vh;
 }
 
@@ -28,5 +40,5 @@
     height: 150px;
     width: 150px;
     background-color: blue;
-    /* margin-top: 300px; */
-}
+    /* margin-top: 300px; 
+} */
