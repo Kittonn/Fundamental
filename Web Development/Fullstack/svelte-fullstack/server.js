@@ -6,7 +6,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 const morgan = require("morgan");
 require("dotenv").config();
-
+const port = process.env.PORT || 4000;
 app.use(cors());
 app.use(bodyParser.json());
 app.use(morgan("tiny"));
@@ -19,6 +19,6 @@ mongoose
   })
   .then(() => console.log(`Connected to database ⚡`))
   .catch((err) => console.log(err));
-app.listen(process.env.PORT, () =>
-  console.log(`listen on port:${process.env.PORT} 🚀`)
+app.listen(port, () =>
+  console.log(`listen on port:${port} 🚀`)
 );
