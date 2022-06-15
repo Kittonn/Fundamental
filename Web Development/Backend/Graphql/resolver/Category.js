@@ -1,9 +1,7 @@
-const { products, categories, reviews } = require("../db");
 const Category = {
-  products: (parent, args, context) => {
-    const { id } = parent;
+  products: ({ id }, args, { products }) => {
     return products.filter((product) => product.categoryId === id);
   },
-}
+};
 
-module.exports = Category
+module.exports = Category;
