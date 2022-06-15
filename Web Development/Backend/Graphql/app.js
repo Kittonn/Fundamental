@@ -1,27 +1,15 @@
 const { ApolloServer, gql } = require("apollo-server");
 
-// String, Int, Float, Boolean
-
-const typeDefs = gql`
-  type Query {
-    hello: String!
-    count:Int!
-    pi:Float!
-    check:Boolean!
-    arrStr: [String!]!
-  }
-`;
-
+const typeDefs = require("./schema");
+const Product = require("./resolver/Product");
+const Query = require("./resolver/Query");
+const Category = require("./resolver/Category");
 const resolvers = {
-  Query: {
-    hello: () =>'kitton',
-    count: () => 12,
-    pi:() => 3.14,
-    check:()=>false,
-    arrStr:()=>['hello','world']
-  },
+  Query,
+  Product,
+  Category,
 };
 
-const server = new ApolloServer({typeDefs,resolvers});
+const server = new ApolloServer({ typeDefs, resolvers });
 
 server.listen().then(({ url }) => console.log(`listen on ${url} 🚀`));
