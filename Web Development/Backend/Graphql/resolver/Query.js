@@ -4,7 +4,18 @@ const Query = {
   pi: (parent, args, context) => 3.14,
   check: (parent, args, context) => false,
   arrStr: (parent, args, context) => ["hello", "world"],
-  products: (parent, args, { products }) => products,
+  products: (parent, { filter }, { products,reviews }) => {
+    let filterProducts = products;
+    if (filter) {
+      const {onSale,avgRating} = filter
+      if (onSale === true) {
+        filterProducts = filterProducts.filter((product) => {
+          return product.onSale;
+        });
+      }
+    }
+    return filterProducts;
+  },
   product: ({ id }, args, { products }) => {
     const product = products.find((product) => product.id === id);
     if (!product) return null;

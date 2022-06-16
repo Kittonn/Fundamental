@@ -1,4 +1,4 @@
-const {gql} = require("apollo-server")
+const { gql } = require("apollo-server");
 const typeDefs = gql`
   type Query {
     hello: String!
@@ -6,7 +6,7 @@ const typeDefs = gql`
     pi: Float!
     check: Boolean!
     arrStr: [String!]!
-    products: [Product!]!
+    products(filter: ProductsFilterInput!): [Product!]!
     product(id: ID!): Product
     categories: [Category!]!
     category(id: ID!): Category
@@ -15,7 +15,7 @@ const typeDefs = gql`
   type Category {
     name: String!
     id: ID!
-    products: [Product!]!
+    products(filter: ProductsFilterInput!): [Product!]!
   }
 
   type Product {
@@ -28,7 +28,33 @@ const typeDefs = gql`
     categoryId: String!
     image: String!
     category: Category
+    reviews: [Review!]!
+  }
+
+  type Review {
+    id: String!
+    date: String!
+    title: String!
+    comment: String!
+    rating: Int!
+    productId: String!
+  }
+  input ProductsFilterInput {
+    onSale: Boolean
+    avgRating: Int
+  }
+  type Mutation {
+    addCategory(input: AddCategoryInput!): Category!
+    deleteCategory(id: ID!): Boolean!
+    updateCategory(id:ID!,input: UpdateCategoryInput!): Category!
+  }
+
+  input AddCategoryInput {
+    name: String!
+  }
+  input UpdateCategoryInput {
+    name: String!
   }
 `;
 
-module.exports = typeDefs
+module.exports = typeDefs;
